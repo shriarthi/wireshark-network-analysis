@@ -11,12 +11,16 @@ pcaps/http-sample.pcapng
 ## Findings
 - Client IP: 10.6.13.133
 - Server IP: 10.6.13.129
+- Destination Port: 5357
 - HTTP POST request observed
-- Clear-text data visible in TCP stream
+- Application data transmitted as SOAP/XML
+- Clear-text data visible after reconstructing traffic using Follow TCP Stream
 
 ## Security Impact
-Unencrypted HTTP traffic exposes sensitive information to attackers.
+Unencrypted HTTP traffic exposes sensitive information to attackers through packet sniffing and man-in-the-middle attacks.
+
+## Evidence
+- TCP stream screenshot: screenshots/http-stream.png
 
 ## Conclusion
-HTTPS should be enforced to protect data confidentiality.
-
+HTTPS should be enforced to protect data confidentiality and prevent information disclosure.
