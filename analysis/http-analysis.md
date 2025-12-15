@@ -9,8 +9,8 @@ pcaps/http-sample.pcapng
 - tcp.port == 80
 
 ## Findings
-- Client IP: <your_client_ip>
-- Server IP: <your_server_ip>
+- Client IP: 10.6.13.133
+- Server IP: 10.6.13.129
 - HTTP POST request observed
 - Clear-text data visible in TCP stream
 
