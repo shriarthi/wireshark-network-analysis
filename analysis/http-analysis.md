@@ -24,3 +24,16 @@ Unencrypted HTTP traffic exposes sensitive information to attackers through pack
 
 ## Conclusion
 HTTPS should be enforced to protect data confidentiality and prevent information disclosure.
+
+## Evidence
+
+### HTTP Packet Details
+![HTTP Packet](screenshots/http-packet-details 1.png)
+![HTTP Packet](screenshots/http-packet-details 2.png)
+
+### HTTP TCP Stream
+![HTTP Stream](screenshots/http-stream.png)
+
+## Filters Used
+See `filters/http_filters.txt` for all Wireshark display filters applied.
+
