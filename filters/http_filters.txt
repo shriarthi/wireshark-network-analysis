@@ -1,14 +1,14 @@
-# Display all HTTP traffic
+# Basic HTTP traffic
 http
 
-# Show only HTTP POST requests
+# HTTP over standard port
+tcp.port == 80
+
+# Show only POST requests
 http.request.method == "POST"
 
-# Show only HTTP GET requests
+# Show only GET requests
 http.request.method == "GET"
 
-# Filter traffic to the server IP
-ip.addr == 10.6.13.129
-
 # Filter traffic between client and server
-ip.src == 10.6.13.133 && ip.dst == 10.6.13.129
+ip.addr == 10.6.13.133 && ip.addr == 10.6.13.129
